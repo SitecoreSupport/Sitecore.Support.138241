@@ -1,5 +1,8 @@
 # Sitecore.Support.138241
-Fixes the &#8220;InvalidOperationException&#8221; error when the &#8220;FormID&#8221; or &#8220;Data Source&#8221; field is empty on the &#8220;Mvc Form&#8221; rendering
+The `InvalidOperationException` error occurs when the `FormID` or `Data Source` field is empty on the `Mvc Form` rendering in `Layout Details`.<br/>
+After applying this patch the empty form (which ID is defined in the `Sitecore.Support.138241.config` file) with additional information will be displayed instead of the error.<br/>
+The default item path for the empty form is `/sitecore/system/Modules/Web Forms for Marketers/Sample forms/Empty form`.<br/>
+It can be customized depending on special needs or it is possible to select another form using the `WFM.EmptyForm` setting in the mentioned configuration file.
 
 ## License  
 This patch is licensed under the [Sitecore Corporation A/S License for GitHub](https://github.com/sitecoresupport/Sitecore.Support.138241/blob/master/LICENSE).  
